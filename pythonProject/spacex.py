@@ -96,7 +96,7 @@ class Spacex(object):
             for s2p_object in self.all_s2p_objects:
                 good_pass_band_filters += s2p_object.is_filter_good('PASS_BAND', low_db_threshold, self.pass_band_high_db_threshold)
             print('Low_db_threshold=', low_db_threshold, '  Number of filters processed=', filters_processed, ' good_pass_band_filters=', good_pass_band_filters, '  Yield=', 100*good_pass_band_filters/filters_processed)
-            print('\n\n')
+            print('\n\n\n')
 
 
 if __name__ == "__main__":
